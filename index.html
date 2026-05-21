@@ -35,6 +35,7 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#why-choose-us">Why Choose Us</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -51,7 +52,7 @@
           </p>
           <div class="hero-actions" aria-label="Quick actions">
             <a class="button primary" href="#contact">Book Appointment</a>
-            <a class="button secondary" href="#location">Get Directions</a>
+            <a class="button secondary" href="tel:+919820829796">Call Clinic</a>
           </div>
         </div>
 
@@ -65,7 +66,7 @@
             <div>
               <span class="stat">Visiting Hours</span>
               <strong>Morning: 9:00 AM - 1:00 PM</strong>
-<strong>Evening: 5:30 PM - 9:30 PM</strong>
+              <strong>Evening: 5:30 PM - 9:30 PM</strong>
             </div>
             <div>
               <span class="stat">Main Doctor</span>
@@ -152,6 +153,27 @@
         </div>
       </section>
 
+      <section class="content-section why-choose-us" id="why-choose-us">
+        <div class="section-heading">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>A clinic experience designed around trust and comfort.</h2>
+        </div>
+        <div class="why-grid">
+          <article>
+            <strong>Personal Attention</strong>
+            <p>Consultations are calm and clear, with time taken to understand each patient’s concern.</p>
+          </article>
+          <article>
+            <strong>Convenient Timings</strong>
+            <p>Morning and evening visiting hours make it easier for families to plan appointments.</p>
+          </article>
+          <article>
+            <strong>Accessible Location</strong>
+            <p>Located near LITTLE EARTH with simple directions through Google Maps.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="content-section location" id="location">
         <div class="section-heading">
           <p class="eyebrow">Location</p>
@@ -167,7 +189,7 @@
               <li>Call before visiting for appointment availability.</li>
             </ul>
             <a
-              class="button secondary"
+              class="button map-button"
               href="https://www.google.com/maps/dir/?api=1&destination=LITTLE%20EARTH%2C%20St%20Tukaram%20Nagar%2C%20Mamurdi%2C%20Pimpri-Chinchwad%2C%20Dehu%20Road%2C%20Maharashtra%20412101"
               target="_blank"
               rel="noreferrer"
@@ -203,8 +225,8 @@
             </div>
             <div>
               <span>Visiting Hours</span>
-              <strong>Mon - Fri: 10:00 AM - 11:00 AM</strong>
-              <strong>Evening: 6:00 PM - 9:00 PM</strong>
+              <strong>Morning: 9:00 AM - 1:00 PM</strong>
+              <strong>Evening: 5:30 PM - 9:30 PM</strong>
             </div>
             <div>
               <span>Address</span>
@@ -226,10 +248,18 @@
               <input type="date" name="date" required />
             </label>
             <label>
+              Preferred Time
+              <select name="time" required>
+                <option value="">Select a visiting slot</option>
+                <option value="Morning: 9:00 AM - 1:00 PM">Morning: 9:00 AM - 1:00 PM</option>
+                <option value="Evening: 5:30 PM - 9:30 PM">Evening: 5:30 PM - 9:30 PM</option>
+              </select>
+            </label>
+            <label>
               Reason for Visit
               <textarea name="message" rows="4" placeholder="Tell us briefly how we can help"></textarea>
             </label>
-            <button class="button primary" type="submit">Request Appointment</button>
+            <button class="button primary" type="submit">Send Request on WhatsApp</button>
             <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
